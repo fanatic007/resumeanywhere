@@ -1,0 +1,25 @@
+{
+  "name": "resumeanywhere",
+  "version": "0.0.0",
+  "description": "A simple techie resume template meant to be accessed across media types",
+  "main": "index.html",
+  "scripts": {
+    "build": "webpack",
+    "serve": "webpack serve"
+  },
+  "keywords": [
+    "html",
+    "static-website",
+    "resume",
+    "cv",
+    "online-resume"
+  ],
+  "author": "Sarang Tayde",
+  "license": "ISC",
+  "devDependencies": {
+    "html-webpack-plugin": "^5.5.0",
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0",
+    "webpack-dev-server": "^4.11.1"
+  }
+}
