@@ -4,23 +4,33 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
   entry: './index.js',
   mode: 'development',
-  // watch: 'true',
-  output: {
-	path: `${__dirname}/dist`,
-	filename: 'bundle.js',
-  }, 
-  plugins: [
-    new HtmlWebpackPlugin({
-      template: './index.html'
-    })
-  ], 
+  watch: true, 
   devServer: {
+    liveReload: true,
     static: {
       directory: path.join(__dirname, 'dist'),
     },
     compress: true,
     port: 1234,
-    open:true,
     watchFiles: ['./']
+  }, 
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: './index.html'
+    })
+  ],
+  module: {
+    rules: [
+      { test: /\.css$/, 
+        use: [
+          {
+            loader: 'style-loader',
+          },
+          {
+            loader: "css-loader",
+          }
+        ]
+      }
+    ],
   },
 };
