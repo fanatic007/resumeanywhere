@@ -4,13 +4,15 @@
     <title>Resumé | Sarang</title>
     <link rel="icon" href="data:,">
   </head>
+  <script>
+    addEventListener('beforeprint', (event) => { });
+    onbeforeprint = (event) => { console.log("Print Called"); };
+  </script>
   <body>
     <header>
       <h1 id="title">Sarang Tayde</h1>
-      <hr>
-      <small>
-        <address>
-          <ul >
+        <address class="d-flex">
+          <ul>
             <li><a href="tel:+919665063631">+91 96650 63631</a></li>
             <li><a href="mailto:sarang.tayde@gmail.com">sarang.tayde@gmail.com</a></li>
           </ul>
@@ -19,97 +21,117 @@
               <li><a href="https://www.linkedin.com/in/sarang-tayde-57a4561bb/">https://www.linkedin.com/in/sarang-tayde</a></li>
           </ul>
         </address>        
-      </small>
     </header>
     <main>
-
       <section>
-      <h2>Skills</h2>
       <details open>
-        <ul>
+        <summary>      
+          <h2>Skills</h2>
+        </summary>
+        <ul class="skills">
           <li>
-            <progress max="4" value="4"></progress>
+            <meter min="0" max="4" value="4"></meter>
             <strong>Angular</strong>
           </li>
           <li>
-            <progress max="4" value="3"></progress>
+            <meter min="0" max="4" value="3"></meter>
             <strong>React</strong>
           </li>
           <li>
-            <progress max="4" value="4"></progress>
+            <meter min="0" max="4" value="4"></meter>
             <strong>HTML | CSS</strong>
           </li>
           <li>
-            <progress max="4" value="4"></progress>
+            <meter min="0" max="4" value="4"></meter>
             <strong>JavaScript</strong>
           </li>
           <li>
-            <progress max="4" value="1"></progress>
+            <meter min="0" max="4" value="1"></meter>
             <strong>Next JS | Node JS</strong>
           </li>
           <li>
-            <progress max="4" value="2"></progress>
+            <meter min="0" max="4" value="2"></meter>
             <strong>RxJS</strong>
           </li>
           <li>
-            <progress max="4" value="2"></progress>
+            <meter min="0" max="4" value="2"></meter>
             <strong>Web Accessibility</strong>
           </li>
           <li>
-            <progress max="4" value="1"></progress>
+            <meter min="0" max="4" value="1"></meter>
             <strong>Web UI Design</strong>
           </li>
         </ul>        
       </details>
       </section>
       <section>
-        <h2>Work Experience</h2>
+        
         <details open>
-        <ol>
-          <li>
+          <summary>
+            <h2>Work Experience</h2>
+          </summary>
+          <dl>
+            <dt>
               <h4><a href="https://www.linkedin.com/company/globant/" target="_blank">Globant India Pvt. Ltd. , Pune</a> --  <a href="https://www.linkedin.com/company/ernstandyoung/" target="_blank">(EY)</a> 
                 <sub><small><time>Apr 2021</time> - Present</small></sub>
               </h4>
+            </dt>
+            <dd>
               <em>Web UI Developer</em>
               <ul>
                 <li>Worked on project migrated from <b>AngularJS</b> to <b>Angular</b></li>
                 <li>Worked on <b>Razor Pages</b> based project, made it mobile compatible</li>
                 <li>Performed maintainance of frontend projects in <b>Razor Pages</b>, <b>Sharepoint</b>, <b>React</b> based project</li>
               </ul>
-          </li>
-          <li>
+            </dd>
+            <dt>
               <h4><a href="https://www.linkedin.com/company/barclays-bank/">Barclays Global Service Centre, Pune</a>
                 <sub><small><time>Aug 2017</time> - <time>Apr 2021</time></small></sub>
               </h4>
-              <em> Frontend Web Developer </em><sub>(2 years, 4 months)</sub>
+            </dt>
+            <dd>
+              <em> Frontend Web Developer </em><sub><small>(2 years, 4 months)</small></sub>
               <ul>
                 <li> Worked on <b>Angular 6, 8 </b>on two projects</li>
                 <li>Extensively used <b>Angular Forms</b>, <b>Angular Router</b>, <b>Injectables</b>,<b>View Child(Children)</b> etc. and <b>SCSS </b>for styling</b> </li>
                 <li> Built server in <b>NodeJS </b>using<b> ExpressJS </b>for local testing </li>
               </ul>
-              <em>Blue Prism Developer <sub>(14 months)</sub></em>
-          </li>
-          <li>
+              <em>Blue Prism Developer <sub><small>(14 months)</small></sub></em>
+              <ul>
+                <li>Worked on RPA using Blue Prism tool.</li>
+                <li>Worked on bunch of projects from design to live proving and maintenance.</li>
+              </ul>
+            </dd>
+            <dt>
               <h4><a href="https://www.linkedin.com/company/symantec/">Symantec Corporation, Pune</a>
                 <sub><small><time>Jan 2017</time> - <time>Jun 2017</time></small></sub>
               </h4>
-              </div>
-              <em>Intern</em><p>Unit tested legacy code base in JAVA using <b>EasyMock,</b> <b>PowerMock</b></p>
-          </li>
-          <li>
+            </dt>
+            <dd>
+              <em>Intern</em>
+              <ul>
+                <li>Unit tested legacy code base in JAVA using <b>EasyMock,</b> <b>PowerMock</b></li>
+              </ul>
+            </dd>
+            <dt>
               <h4><a href="https://www.linkedin.com/company/risemetric/">Rismetric LLP, Mumbai</a>
                 <sub><small><time>Jun 2015</time> - <time>Jul 2015</time></small></sub>
               </h4>
-              </div>
+            </dt>
+            <dd>
               <em>Intern</em>
-              <p>Performed sales work over email while learing <b>SEO</b> basics from the experts </p>
-          </li>
-        </ol>
+              <ul>
+                <li>Performed sales work over email while learing <b>SEO</b> basics from the experts </li>
+              </ul>
+            </dd>
+          </dl>
         </details>
       </section>
-      <section>
-        <h2>Certifications and Mini-Projects</h2>
+      <section>        
         <details open>
+          <summary>
+            <h2>Certifications and Mini-Projects</h2>
+          </summary>
           <ul>
             <li>
                 <h4>Udemy Certifications</h4>
@@ -129,9 +151,11 @@
           </ul>          
         </details>
       </section>
-      <section>
-        <h2>Education</h2>
+      <section>        
         <details open>
+          <summary>
+            <h2>Education</h2>
+          </summary>
           <ul>
             <li>
               <h4>Bachelor of Technology
@@ -147,9 +171,11 @@
           </ul>        
         </details>
       </section>
-      <section>
-        <h2>Hobbies and Interests</h2>
+      <section>        
         <details open>
+          <summary>
+            <h2>Hobbies and Interests</h2>
+          </summary>
           <ul>
             <li>Music (Independent, Fusion)</li>
             <li>Cricket</li>
@@ -160,6 +186,7 @@
       </section>
     </main>
   </body>
+  <hr>
   <footer>
 
   </footer>

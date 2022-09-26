@@ -1,0 +1,85 @@
+@import url("http://fonts.googleapis.com/css?family=Lato:400,700");
+
+body{
+  font-family: "Lato", sans-serif;
+  width: 21cm;
+  max-height: 29.7cm;
+  margin: 8px auto;
+  -webkit-font-smoothing: antialiased;
+}
+
+header{
+  color: white;
+  background-color: orange;
+  padding: 3em 1em 1em;
+}
+
+header ul{
+  padding-inline-start: 0.1em;
+}
+
+h2{
+  margin-block-end: .16em;
+  margin-block-start: .16em;
+  opacity: 0.7;
+}
+
+h3,h4 {
+  margin-block-end: 0;
+}
+
+em{
+  font-weight: bold;
+}
+
+details > ul,
+address > ul{
+  list-style-type: none;
+}
+
+
+dl,ul{
+  padding-inline-start: 1.2em;
+  margin-block-start: 0;
+  margin-block-end: .2em;
+}
+
+meter::-webkit-meter-optimum-value {
+  background:orange;
+}
+
+summary * {  
+  display: inline-block;
+}
+summary{
+  cursor: pointer;
+  padding: 0.2em 1em;
+  border-bottom: whitesmoke 0.1em solid;
+  list-style: none;
+}
+summary::-webkit-details-marker {
+  display:block !important;
+  visibility: hidden;
+}
+
+header, section {
+  border: 0.8px solid lightgray;
+  box-shadow: 0.8px 0.8px 0.6px 0.8px lightgray;
+  margin-bottom: 8px;
+}
+
+
+.d-flex {
+  display: flex !important;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+ul.skills {
+  display: flex;
+  flex-flow: column wrap;
+}
+
+ul.skills li {
+  flex: 25%;
+}
