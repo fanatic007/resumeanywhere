@@ -2,9 +2,10 @@
 
 body{
   font-family: "Lato", sans-serif;
-  width: 21cm;
+  max-width: 21cm;
   max-height: 29.7cm;
   margin: 8px auto;
+  padding: 8px;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -58,14 +59,17 @@ summary{
   list-style: none;
 }
 summary::-webkit-details-marker {
-  display:block !important;
-  visibility: hidden;
+  display:none !important;
 }
 
 header, section {
   border: 0.8px solid lightgray;
   box-shadow: 0.8px 0.8px 0.6px 0.8px lightgray;
   margin-bottom: 8px;
+}
+
+section{
+  padding: 0.4em;
 }
 
 

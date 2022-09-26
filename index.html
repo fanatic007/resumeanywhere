@@ -6,7 +6,7 @@
   </head>
   <script>
     addEventListener('beforeprint', (event) => { });
-    onbeforeprint = (event) => { console.log("Print Called"); };
+    onbeforeprint = (event) => { console.log(document.querySelectorAll("details").forEach(details=>details.setAttribute("open",true)) ); };
   </script>
   <body>
     <header>
