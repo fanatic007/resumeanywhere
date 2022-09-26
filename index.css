@@ -47,6 +47,21 @@ dl,ul{
 
 meter::-webkit-meter-optimum-value {
   background:orange;
+  background-size: 100% 100%;
+}
+
+meter::-webkit-meter-bar {
+  background:transparent;
+  background-size: 100% 100%;
+  height: 1em;
+  border-radius: 0.1em;
+}
+
+meter{
+  -webkit-appearance: meter;
+  background:white;
+  border: dotted 0.8px gray;
+  width: 8em;
 }
 
 summary * {  
@@ -64,7 +79,7 @@ summary::-webkit-details-marker {
 
 header, section {
   border: 0.8px solid lightgray;
-  box-shadow: 0.8px 0.8px 0.6px 0.8px lightgray;
+  box-shadow: 0.8px 0.8px 1.6px 1.6px lightgray;
   margin-bottom: 8px;
 }
 
