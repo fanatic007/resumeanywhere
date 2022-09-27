@@ -127,6 +127,16 @@ section{
 }
 
 ul.skills {
+  max-height: 16em;
   display: flex;
-  flex-flow: column wrap;
+  flex-flow: row wrap;
+  justify-content: space-between;
 }
+
+ul.skills li {
+  flex: 1 1 16em;
+  margin: 0.4em 1em auto 0;
+  display: flex;
+  justify-content: space-between;
+}
+
