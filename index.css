@@ -12,11 +12,39 @@ body{
 header{
   color: white;
   background-color: orange;
-  padding: 3em 1em 1em;
+  padding: 3em 1.6em 1em;
 }
 
 header ul{
   padding-inline-start: 0.1em;
+}
+
+header a {
+  color: whitesmoke;
+}
+
+main a {
+  color: black;
+  text-decoration: none;
+}
+
+main a::after {
+  content: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAQElEQVR42qXKwQkAIAxDUUdxtO6/RBQkQZvSi8I/pL4BoGw/XPkh4XigPmsUgh0626AjRsgxHTkUThsG2T/sIlzdTsp52kSS1wAAAABJRU5ErkJggg==);
+  margin: 0 0.5em;
+  height: 3em;
+  padding: 0;
+  color: orange;
+}
+
+a:hover::after{
+  color: orange;
+  border-bottom: 0.1em solid orange;
+}
+
+a:hover{
+  text-decoration: underline;
+  text-decoration-color: orange;
+  text-decoration-thickness: 0.2em;
 }
 
 h2{
@@ -36,6 +64,7 @@ em{
 details > ul,
 address > ul{
   list-style-type: none;
+  font-weight: bold;
 }
 
 
@@ -70,23 +99,26 @@ summary * {
 summary{
   cursor: pointer;
   padding: 0.2em 1em;
-  border-bottom: whitesmoke 0.1em solid;
   list-style: none;
 }
+
+details[open] summary {
+  border-bottom: whitesmoke 0.1em solid;  
+}
+
 summary::-webkit-details-marker {
   display:none !important;
 }
 
 header, section {
   border: 0.8px solid lightgray;
-  box-shadow: 0.8px 0.8px 1.6px 1.6px lightgray;
+  box-shadow: 1.2px 1.2px 1.6px 1.6px lightgray;
   margin-bottom: 8px;
 }
 
 section{
   padding: 0.4em;
 }
-
 
 .d-flex {
   display: flex !important;
@@ -97,8 +129,4 @@ section{
 ul.skills {
   display: flex;
   flex-flow: column wrap;
-}
-
-ul.skills li {
-  flex: 25%;
 }
