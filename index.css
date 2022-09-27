@@ -6,6 +6,7 @@ body{
   max-height: 29.7cm;
   margin: 8px auto;
   padding: 8px;
+  background-color: whitesmoke;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -89,7 +90,7 @@ meter::-webkit-meter-bar {
 meter{
   -webkit-appearance: meter;
   background:white;
-  border: dotted 0.8px gray;
+  border: solid 0.04em lightgray;
   width: 8em;
 }
 
@@ -100,6 +101,13 @@ summary{
   cursor: pointer;
   padding: 0.2em 1em;
   list-style: none;
+}
+summary:hover{
+  background-image: linear-gradient(to right, whitesmoke 10%, white 100%);
+}
+
+sub{
+  margin: 2em;
 }
 
 details[open] summary {
@@ -118,6 +126,7 @@ header, section {
 
 section{
   padding: 0.4em;
+  background-color: white;
 }
 
 .d-flex {
