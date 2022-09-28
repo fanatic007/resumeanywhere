@@ -5,8 +5,15 @@
     <link rel="icon" href="data:,">
   </head>
   <script>
-    addEventListener('beforeprint', (event) => { });
-    onbeforeprint = (event) => { console.log(document.querySelectorAll("details").forEach(details=>details.setAttribute("open",true)) ); };
+    const onbeforeprint = function (event) { 
+      document.querySelectorAll("details").forEach(details=>details.setAttribute("open",true));
+      document.querySelectorAll('body')[0].style.fontSize='8pt';
+    };
+    const onafterprint = function (event) {
+      document.querySelectorAll('body')[0].style.fontSize='14px';
+    };
+    addEventListener('beforeprint', onbeforeprint);
+    addEventListener('afterprint', onafterprint);
   </script>
   <body>
     <header>
@@ -17,7 +24,7 @@
             <li><a href="mailto:sarang.tayde@gmail.com">sarang.tayde@gmail.com</a></li>
           </ul>
           <ul >
-              <li><a href="https://github.com/fanatic007">github.com/fanatic007</a></li>
+              <li><a href="https://github.com/fanatic007"></i>github.com/fanatic007</a></li>
               <li><a href="https://www.linkedin.com/in/sarang-tayde-57a4561bb/">https://www.linkedin.com/in/sarang-tayde</a></li>
           </ul>
         </address>        
@@ -35,7 +42,7 @@
           </li>
           <li>
             <label>React</label>
-            <meter min="0" max="4" value="3"></meter>
+            <meter min="0" max="4" value="3">3/4</meter>
           </li>
           <li>
             <label>HTML | CSS</label>
@@ -186,7 +193,6 @@
       </section>
     </main>
   </body>
-  <hr>
   <footer>
 
   </footer>
