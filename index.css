@@ -17,6 +17,13 @@ header{
   padding: 1.2em 1em;
 }
 
+header img{
+  height: 1em;
+  position: relative;
+  margin: 0 0.4em -0.2em;
+  filter: invert(1);
+}
+
 header ul{
   padding-inline-start: 0.1em;
 }
@@ -24,6 +31,7 @@ header ul{
 header a {
   color: whitesmoke;
 }
+
 
 main a {
   color: black;
@@ -34,7 +42,6 @@ main a {
 main a::after {
   content: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAQElEQVR42qXKwQkAIAxDUUdxtO6/RBQkQZvSi8I/pL4BoGw/XPkh4XigPmsUgh0626AjRsgxHTkUThsG2T/sIlzdTsp52kSS1wAAAABJRU5ErkJggg==);
   margin: 0 0.5em;
-  height: 3em;
   padding: 0;
   color: orange;
 }
@@ -44,10 +51,10 @@ a:hover::after{
   border-bottom: 0.1em solid orange;
 }
 
-a:hover{
+main a:hover{
   text-decoration: underline;
   text-decoration-color: orange;
-  text-decoration-thickness: 0.2em;
+  text-decoration-thickness: 0.16em;
 }
 
 h1{
