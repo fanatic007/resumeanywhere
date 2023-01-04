@@ -7,7 +7,7 @@
   <script>
     const onbeforeprint = function (event) { 
       document.querySelectorAll("details").forEach(details=>details.setAttribute("open",true));
-      document.querySelectorAll('body')[0].style.fontSize='8pt';
+      document.querySelectorAll('body')[0].style.fontSize='10pt';
     };
     const onafterprint = function (event) {
       document.querySelectorAll('body')[0].style.fontSize='14px';
@@ -16,7 +16,7 @@
     addEventListener('afterprint', onafterprint);
   </script>
   <body>
-    <header>
+    <header class="d-flex">
       <h1 id="title">Sarang Tayde</h1>
       <address class="d-flex">
         <ul>
@@ -25,70 +25,80 @@
         </ul>
         <ul >
             <li><a href="https://github.com/fanatic007"><img src="images/github.svg">github.com/fanatic007</a></li>
-            <li><a href="https://www.linkedin.com/in/sarang-tayde-57a4561bb/"><img src="images/linkedin.svg">https://www.linkedin.com/in/sarang-tayde</a></li>
+            <li><a href="https://www.linkedin.com/in/sarang-tayde-57a4561bb/"><img src="images/linkedin.svg">linkedin.com/in/sarang-tayde</a></li>
         </ul>
       </address>        
     </header>
     <main>
       <section>
-      <details open>
-        <summary>      
-          <h2>Skills</h2>
-        </summary>
-        <ul class="skills">
-          <li>
-            <label for="angular">Angular</label>
-            <meter id="angular" id="" min="0" max="4" value="4"></meter>
-          </li>
-          <li>
-            <label for="react" >React</label>
-            <meter id="react" id="" min="0" max="4" value="3">3/4</meter>
-          </li>
-          <li>
-            <label for="htmlcss" >HTML | CSS</label>
-            <meter id="htmlcss" min="0" max="4" value="4"></meter>
-          </li>
-          <li>
-            <label for="javascript" >JavaScript</label>
-            <meter id="javascript" min="0" max="4" value="4"></meter>
-          </li>
-          <li>
-            <label for="nextjsnodejs" >Next JS | Node JS</label>
-            <meter id="nextjsnodejs" min="0" max="4" value="3"></meter>
-          </li>
-          <li>
-            <label for="prisma" >PRISMA</label>
-            <meter id="prisma" min="0" max="4" value="2"></meter>
-          </li>
-          <li>
-            <label for="rxjs" >RxJS</label>
-            <meter id="rxjs" min="0" max="4" value="2"></meter>
-          </li>
-          <li>
-            <label for="webaccessibility" >Web Accessibility | UI Design</label>
-            <meter id="webaccessibility" min="0" max="4" value="3"></meter>
-          </li>
-        </ul>        
-      </details>
+        <details open>
+          <summary>      
+            <h2>Summary</h2>
+          </summary>
+          <p><mark>JavaScript</mark> Developer with <mark>MEAN/MERN</mark> stack skills having <mark>four years</mark> of experience primarily in <mark>Frontend</mark> (<mark>Angular</mark> and <mark>React</mark>) and hands-on <mark>NextJS</mark> & <mark>NodeJS</mark>. Been part of a dozen projects & PoCs. Accessible <mark>UI Design</mark> and Web Development enthusiast.</p>
+        </details>
       </section>
+
       <section>
-        
+        <details open>
+          <summary>      
+            <h2>Skills</h2>
+          </summary>
+          <ul class="skills">
+            <li>
+              <label for="angular">Angular</label>
+              <meter id="angular" id="" min="0" max="4" value="4"></meter>
+            </li>
+            <li>
+              <label for="react">React | Redux</label>
+              <meter id="react" id="" min="0" max="4" value="3">3/4</meter>
+            </li>
+            <li>
+              <label for="htmlcss" >HTML | CSS</label>
+              <meter id="htmlcss" min="0" max="4" value="4"></meter>
+            </li>
+            <li>
+              <label for="javascript" >JavaScript | TypeScript</label>
+              <meter id="javascript" min="0" max="4" value="4"></meter>
+            </li>
+            <li>
+              <label for="nextjsnodejs" >Next JS | Node JS</label>
+              <meter id="nextjsnodejs" min="0" max="4" value="3"></meter>
+            </li>
+            <li>
+              <label for="rxjs" >RxJS</label>
+              <meter id="rxjs" min="0" max="4" value="2"></meter>
+            </li>
+            <li>
+              <label for="webaccessibility" >UI Design | Web Accessibility</label>
+              <meter id="webaccessibility" min="0" max="4" value="3"></meter>
+            </li>
+            <li>
+              <label for="prisma" >PRISMA | MongoDB</label>
+              <meter id="prisma" min="0" max="4" value="2"></meter>
+            </li>
+          </ul>        
+        </details>
+      </section>
+      <section>        
         <details open>
           <summary>
             <h2>Work Experience</h2>
           </summary>
           <dl>
             <dt>
-              <h4><a href="https://www.linkedin.com/company/globant/" target="_blank">Globant India Pvt. Ltd. , Pune</a> - ( <a href="https://www.linkedin.com/company/ernstandyoung/" target="_blank">EY</a> )
+              <h4><a href="https://www.linkedin.com/company/globant/" target="_blank">Globant India Pvt. Ltd. , Pune</a>&nbsp; - &nbsp;&nbsp;( <a href="https://www.linkedin.com/company/ernstandyoung/" target="_blank">EY</a> )
                 <sub><small><time>Apr 2021</time> - Present</small></sub>
               </h4>
             </dt>
             <dd>
               <em>Web UI Developer</em>
               <ul>
-                <li>Worked on project migrated from <b>AngularJS</b> to <b>Angular</b></li>
-                <li>Worked on <b>Razor Pages</b> based project with emphasis on mobile compatibility</li>
-                <li>Performed maintainance of frontend projects in <b>Razor Pages</b>, <b>Sharepoint</b>, <b>React</b> based project</li>
+                <li>Worked on enhancement/bugfixing of <b>Razor Pages</b> MVC based project using <b>JQuery</b> & <b>Bootstrap</b>. Gained expertise in DevTools CSS degugging. This was tax form uploader app for the US clientele containing forms tables.</li>
+                <li>Lead a four sprint activity turning a website mobile compatible by diagnosing collating bugs (more than 15) with navigational enhancements(focus on Safari). Coordinated with UXDs BAs QAs and Business for branding guidelines.</li>
+                <li>Participated in creating a survey app using <b>React (Redux)</b> in <strong>TypeScript</strong>. Enabled two language using <b>i18next</b></li>
+                <li>Migrated an <b>AngularJS</b> app to <b>Angular 6</b> taking care of more than 10 interactive components </li>
+                <li>Maintained and started more than five of PoCs and frontend projects and  in <b>Razor Pages</b>, <b>Sharepoint</b>, <b>React</b> <b>NodeJS</b> </li>
               </ul>
             </dd>
             <dt>
@@ -97,16 +107,17 @@
               </h4>
             </dt>
             <dd>
-              <em> Frontend Web Developer </em><sub><small>(2 years, 4 months)</small></sub>
+              <em>Frontend Web Developer </em><sub><small>(2 years, 4 months)</small></sub>
               <ul>
-                <li> Worked on <b>Angular 6, 8 </b>on two projects</li>
-                <li>Extensively used <b>Angular Forms</b>, <b>Angular Router</b>, <b>Injectables</b>,<b>View Child(Children)</b> etc. and <b>SCSS </b>for styling</b> </li>
-                <li> Built server in <b>NodeJS </b>using<b> ExpressJS </b>for local testing </li>
+                <li>Single-handedly developed two form based workflow projects in <b>Angular 6</b> & <b>8</b> respectively</li>
+                <li>Extensively applied <b>Angular Forms</b>, <b>Angular Router</b>, <b>Injectables</b>, <b>View Child(Children)</b> etc. and <b>SCSS </b>for styling</b> </li>
+                <li>Implemented <b>TesseractJS</b> on pdf(scanned) selection, which reduced pdf processing time by nearly 30%</li>
+                <li>Built a mock server with <b>NodeJS</b>-<b> ExpressJS</b> saving nearly 40% of local testing time. Supported MySQL DB setup</li>
               </ul>
-              <em>Blue Prism Developer </em><sub><small>(14 months)</small></sub>
+              <em>Blue Prism Developer </em><sub><small>(1 years, 2 months)</small></sub>
               <ul>
-                <li>Worked on RPA using Blue Prism tool.</li>
-                <li>Worked on bunch of projects from design to live proving and maintenance.</li>
+                <li>Worked with Robotic Process Automation Team on Blue Prism and delivered over four projects(some simultaneous).</li>
+                <li>Integrated and Deployed Blue Prism dozens of bots and live proved(resolved) them.</li>
               </ul>
             </dd>
             <dt>
@@ -117,7 +128,8 @@
             <dd>
               <em>Intern</em>
               <ul>
-                <li>Unit tested legacy code base in JAVA using <b>EasyMock,</b> <b>PowerMock</b></li>
+                <li>Unit tested legacy code base in JAVA using three different UT frameworks; <b>Mockito</b>, <b>EasyMock</b>, <b>PowerMock</b></li>
+                <li>Brought up the coverage from 11% to 52%</b></li>
               </ul>
             </dd>
             <dt>
@@ -128,8 +140,9 @@
             <dd>
               <em>Intern</em>
               <ul>
-                <li>Performed sales work over email while learing <b>SEO</b> basics from the experts </li>
-              </ul>
+                <li>Learned <strong>SEO</strong> basics from the experts as witnessed their page ranking and ranked a sample blog from page 5 to 1</li>
+                <li>Drove sales reach writing hundreds of email for review app 'Grappr', learned <strong>Git</strong> from its mobile app codebase</li>
+              </ul> 
             </dd>
           </dl>
         </details>
@@ -152,9 +165,9 @@
             <li>
               <h4>Open Projects</h4>
               <ul>
-                  <li><a target="_blank" href="https://github.com/fanatic007/realworld_mongodb-prisma-isr"><code>realworld_mongodb-prisma-isr</code>: Blogging App using <strong> NextJS, PRISMA</strong></a></li>
-                  <li><a target="_blank" href="https://www.npmjs.com/package/checktree"><code>checktree</code>: Component Tree with checkboxes in <strong>Angular</strong></a></li>
-                  <li><a target="_blank" href="https://github.com/fanatic007/resumeanywhere"><code>resumeanywhere</code>: This resume built with attention to <strong>Semantic HTML</strong></a></li>
+                  <li><a target="_blank" href="https://github.com/fanatic007/realworld_mongodb-prisma-isr"><code>mongodb-prisma-isr</code>: Blogging App using <strong> NextJS, PRISMA(NoSQL)</strong></a>demonstrating Incremental Static Regenaration</li>
+                  <li><a target="_blank" href="https://www.npmjs.com/package/checktree"><code>checktree</code>: Component Tree with checkboxes</a>recurssive use case of <strong>Angular</strong> <b>NgTemplate</b>,<b>NgContainer</b> and Tree DS</li>
+                  <li><a target="_blank" href="https://github.com/fanatic007/resumeanywhere"><code>resumeanywhere</code>: This resume created in HTML5 </a>using suitable <strong>Semantic Text & Layout HTML</strong> set up with <strong>Webpack</strong></li>
               </ul>
             </li>
           </ul>          
@@ -172,14 +185,15 @@
               </h4>
               <em>Walchand College of Engineering, Sangli (an Autonomous Institute)</em>
               <ul>
-                <li>Majored in Computer Science and Engineering CGPA 7.01</li>
-                <li>Developed an <b>Android Application </b>Notapp in 2015 for college notice delivery</li>
-                <li>TCS Code Vita 2016 : Secured <a href="https://www.programminggeek.in/2016/08/tcs-codevita-2016-round-1-result.html#.Yy4yhi8Ro6U">AIR 171</a> (round 1 or 2)</li>
+                <li>Majored in Computer Science and Engineering</li>
+                <li>Lead development of an <b>Android Application </b>Notapp in 2015 for college notice delivery</li>
+                <li>TCS Code Vita-2016 : Secured <a href="https://www.programminggeek.in/2016/08/tcs-codevita-2016-round-1-result.html#.Yy4yhi8Ro6U">AIR 171</a> (round 1 or 2)</li>
               </ul>
             </li>
           </ul>        
         </details>
       </section>
+<!--
       <section>        
         <details open>
           <summary>
@@ -193,6 +207,7 @@
           </ul>          
         </details>
       </section>
+-->      
     </main>
   </body>
   <footer>
