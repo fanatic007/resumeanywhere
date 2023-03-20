@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Lato:400,700");
+@import url('https://fonts.googleapis.com/css?family=Nunito Sans' rel='stylesheet');
 
 body{
   font-family: "Lato", sans-serif;
@@ -104,18 +104,19 @@ p {
 
 dl,ul{
   padding-inline-start: 1.2em;
+  padding-inline-end: 0.1em;
   margin-block-start: 0.2em;
   margin-block-end: 0.4em;
 }
 
 dd {
-  margin-inline-start: 28px;
+  margin-inline-start: 16px;
 }
 
 meter::-webkit-meter-optimum-value {
   background:orange;
   background-size: 100% 100%;
-  height: 1em;
+  height: 1.1em;
   border-radius: 0.1em;
   box-shadow: 0.5px 0.5px 0.8px 0.8px lightgray;
 }
@@ -123,7 +124,7 @@ meter::-webkit-meter-optimum-value {
 meter::-webkit-meter-bar {
   background:whitesmoke;
   background-size: 100% 100%;
-  height: 1.1em;
+  height: 1.2em;
   border: solid 0.02em lightgray;
   border-radius: 0.2em;
   box-shadow: 0.5px 0.5px 0.5px 0.5px lightgray inset;
@@ -134,11 +135,12 @@ meter{
   background:whitesmoke;
   border-radius: 0.2em;
   width: 8em;
+  margin: 2px 0;
 }
 
 meter::after {
-  content : attr(value) ' / 4' ;
-  top:-1.3em;
+  content : attr(value) ' / 10' ;
+  top:-1.2em;
   left:0.4em;
   position:relative;
   color: white;
